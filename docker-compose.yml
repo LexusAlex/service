@@ -1,0 +1,58 @@
+version: "3.9"
+services:
+
+  nginx:
+    build:
+      context: docker
+      dockerfile: nginx/Dockerfile
+    ports:
+      - "80:80"
+    volumes:
+      - ./:/${NAME_SERVICE}
+    depends_on:
+      - php-fpm
+
+  php-fpm:
+    build:
+      context: docker
+      dockerfile: php-fpm/Dockerfile
+    environment:
+      MYSQL_HOST: mysql
+      MYSQL_USER: ${NAME_SERVICE}
+      MYSQL_PASSWORD: ${NAME_SERVICE}
+      MYSQL_ROOT_PASSWORD: ${NAME_SERVICE}
+      MYSQL_DATABASE: ${NAME_SERVICE}
+      MYSQL_CHARSET: utf8
+    volumes:
+      - ./:/${NAME_SERVICE}
+    depends_on:
+      - mysql
+
+  php-cli:
+    build:
+      context: docker
+      dockerfile: php-cli/Dockerfile
+    environment:
+     MYSQL_HOST: mysql
+     MYSQL_USER: ${NAME_SERVICE}
+     MYSQL_PASSWORD: ${NAME_SERVICE}
+     MYSQL_ROOT_PASSWORD: ${NAME_SERVICE}
+     MYSQL_DATABASE: ${NAME_SERVICE}
+     MYSQL_CHARSET: utf8
+    volumes:
+      - ./:/${NAME_SERVICE}
+
+  mysql:
+    image: mysql:8.0-debian
+    environment:
+      MYSQL_USER: ${NAME_SERVICE}
+      MYSQL_PASSWORD: ${NAME_SERVICE}
+      MYSQL_ROOT_PASSWORD: ${NAME_SERVICE}
+      MYSQL_DATABASE: ${NAME_SERVICE}
+    volumes:
+      - mysql:/var/lib/mysql
+      - ./:/${NAME_SERVICE}
+    ports:
+      - "3306:3306"
+volumes:
+  mysql:
