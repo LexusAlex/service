@@ -1,0 +1,23 @@
+{
+    "name": "lexusalex/service",
+    "description": "service by site",
+    "type": "project",
+    "minimum-stability": "stable",
+    "license": "BSD-3-Clause",
+    "config": {
+        "process-timeout": 0,
+        "sort-packages": true
+    },
+    "authors": [
+        {
+            "name": "lexusalex",
+            "email": "alexsey_89@bk.ru"
+        }
+    ],
+    "require": {
+        "robmorgan/phinx": "^0.13.4"
+    },
+    "scripts": {
+        "phinx": "phinx"
+    }
+}
