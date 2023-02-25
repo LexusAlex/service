@@ -15,6 +15,6 @@ RUN apt -y update \
 
 COPY --from=composer:2.5 /usr/bin/composer /usr/local/bin/composer
 
-WORKDIR /${NAME_SERVICE}
+WORKDIR /service
 
-USER ${NAME_SERVICE}
+USER service
