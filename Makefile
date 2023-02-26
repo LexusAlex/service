@@ -11,3 +11,11 @@ composer-dump-autoload:
 	docker compose run --rm php-cli composer dump-autoload
 composer-tree-package:
 	docker compose run --rm php-cli composer show -t
+create-migrate:
+	docker compose run --rm php-cli composer phinx create -- --configuration src/Db/phinx.php --template vendor/robmorgan/phinx/src/Phinx/Migration/Migration.up_down.template.php.dist $(name)
+run-migrate:
+	docker compose run --rm php-cli composer phinx migrate -- --configuration src/Db/phinx.php
+rollback-migrate:
+	docker compose run --rm php-cli composer phinx rollback -- --configuration src/Db/phinx.php
+status-migrate:
+	docker compose run --rm php-cli composer phinx status -- --configuration src/Db/phinx.php
