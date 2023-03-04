@@ -7,11 +7,17 @@ use Laminas\ConfigAggregator\PhpFileProvider;
 
 use function Service\Configurations\environment;
 
-$configuration = [];
+return static function ($modules) {
+    $configuration = [];
 
-$configuration[] = new PhpFileProvider(__DIR__ . '/common/*.php');
-$configuration[] = new PhpFileProvider(__DIR__ . '/' . environment('APPLICATION_ENVIRONMENT', 'production') . '/*.php');
+    foreach ($modules as $module) {
+        $configuration[] = new PhpFileProvider(__DIR__ . "/../{$module}/Configuration/common/*.php");
+        $configuration[] = new PhpFileProvider(__DIR__ . "/../{$module}/Configuration/" . environment('APPLICATION_ENVIRONMENT', 'production') . "/*.php");
+    }
 
-$aggregator = new ConfigAggregator($configuration);
+    $aggregator = new ConfigAggregator($configuration);
 
-return $aggregator->getMergedConfig();
+    return $aggregator->getMergedConfig();
+};
+
+
