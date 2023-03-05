@@ -13,6 +13,8 @@ composer-tree-package:
 	docker compose run --rm php-cli composer show -t
 test:
 	docker compose run --rm php-cli composer phpunit
+fixer:
+	docker compose run --rm php-cli composer php-cs-fixer
 create-migrate:
 	docker compose run --rm php-cli composer phinx create -- --configuration src/Db/phinx.php --template vendor/robmorgan/phinx/src/Phinx/Migration/Migration.up_down.template.php.dist $(name)
 run-migrate:

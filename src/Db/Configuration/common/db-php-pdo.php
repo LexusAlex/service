@@ -5,7 +5,7 @@ declare(strict_types=1);
 use function Service\Configurations\environment;
 
 return [
-    PDO::class => function(){
+    PDO::class => function () {
         $options = [
             PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION, // Режим обработки ошибок
             PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC, // Режим получения данных

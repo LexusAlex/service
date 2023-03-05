@@ -19,5 +19,3 @@ return static function ($modules) {
 
     return $aggregator->getMergedConfig();
 };
-
-

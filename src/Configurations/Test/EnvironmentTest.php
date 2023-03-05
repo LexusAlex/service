@@ -6,8 +6,8 @@ namespace Service\Configurations\Test;
 
 use PHPUnit\Framework\TestCase;
 use RuntimeException;
-use function Service\Configurations\environment;
 
+use function Service\Configurations\environment;
 
 final class EnvironmentTest extends TestCase
 {

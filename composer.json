@@ -30,9 +30,11 @@
     },
     "scripts": {
         "phinx": "phinx",
-        "phpunit": "phpunit --colors=always"
+        "phpunit": "phpunit --colors=always",
+        "php-cs-fixer": "php-cs-fixer fix --allow-risky=yes --diff"
     },
     "require-dev": {
+        "friendsofphp/php-cs-fixer": "^3.14",
         "phpunit/phpunit": "^10.0",
         "roave/security-advisories": "dev-latest"
     }
