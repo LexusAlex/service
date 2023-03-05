@@ -15,6 +15,8 @@ test:
 	docker compose run --rm php-cli composer phpunit
 fixer:
 	docker compose run --rm php-cli composer php-cs-fixer
+psalm:
+	docker compose run --rm php-cli composer psalm -- --no-diff
 create-migrate:
 	docker compose run --rm php-cli composer phinx create -- --configuration src/Db/phinx.php --template vendor/robmorgan/phinx/src/Phinx/Migration/Migration.up_down.template.php.dist $(name)
 run-migrate:

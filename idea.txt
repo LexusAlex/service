@@ -1,0 +1,2 @@
+1. Продумать кеширование конфигов https://deworker.pro/blog/stream-modules#comment-b24762ca-e579-4633-9036-e55e1f35208f
+2. Убрать PHP_CS_FIXER_IGNORE_ENV, когда в php-cs-fixer завезут поддержку 8.2
