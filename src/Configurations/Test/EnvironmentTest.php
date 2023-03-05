@@ -9,6 +9,9 @@ use RuntimeException;
 
 use function Service\Configurations\environment;
 
+/**
+ * @internal
+ */
 final class EnvironmentTest extends TestCase
 {
     public function testUndefined(): void

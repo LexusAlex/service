@@ -7,7 +7,7 @@ use function Service\Configurations\environment;
 return [
     'paths' => [
         'migrations' => '%%PHINX_CONFIG_DIR%%/migrations',
-        'seeds' => '%%PHINX_CONFIG_DIR%%/seeds'
+        'seeds' => '%%PHINX_CONFIG_DIR%%/seeds',
     ],
     'environments' => [
         'default_migration_table' => 'migrations',
@@ -22,5 +22,5 @@ return [
             'charset' => environment('MYSQL_CHARSET'),
         ],
     ],
-    'version_order' => 'creation'
+    'version_order' => 'creation',
 ];

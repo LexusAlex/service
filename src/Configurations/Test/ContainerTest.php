@@ -6,9 +6,12 @@ namespace Service\Configurations\Test;
 
 use PHPUnit\Framework\TestCase;
 
+/**
+ * @internal
+ */
 final class ContainerTest extends TestCase
 {
-    public function testSetValue()
+    public function testSetValue(): void
     {
         $dependencies = (require __DIR__ . '/../dependencies.php')([]);
         $container = (require __DIR__ . '/../container.php')($dependencies);
