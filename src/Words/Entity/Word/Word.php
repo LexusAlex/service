@@ -24,6 +24,14 @@ final class Word
         $this->description = $description;
     }
 
+    public static function createWord(
+        Id $id,
+        DateTimeImmutable $dateTimeImmutable,
+        Name $name,
+        Description $description
+    ): self {
+        return new self($id, $dateTimeImmutable, $name, $description);
+    }
     public function getCreatedAt(): DateTimeImmutable
     {
         return $this->created_at;
