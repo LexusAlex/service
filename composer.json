@@ -26,7 +26,9 @@
         "ext-pdo": "*",
         "laminas/laminas-config-aggregator": "^1.13",
         "php-di/php-di": "^7.0",
-        "robmorgan/phinx": "^0.13.4"
+        "ramsey/uuid": "^4.7",
+        "robmorgan/phinx": "^0.13.4",
+        "webmozart/assert": "^1.11"
     },
     "scripts": {
         "phinx": "phinx",

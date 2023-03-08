@@ -9,7 +9,7 @@ final class CreateTableWords extends AbstractMigration
     public function up(): void
     {
         $this->execute("CREATE TABLE IF NOT EXISTS `words_words` (
-          `id` VARCHAR(255) NOT NULL,
+          `id` CHAR(36) NOT NULL,
           `name` VARCHAR(255) NOT NULL,
           `description` VARCHAR(255),
           `created_at` DATETIME NOT NULL,
@@ -19,6 +19,6 @@ final class CreateTableWords extends AbstractMigration
 
     public function down(): void
     {
-        $this->execute("DROP TABLE `words`");
+        $this->execute("DROP TABLE `words_words`");
     }
 }

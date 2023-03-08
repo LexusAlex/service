@@ -18,7 +18,7 @@ return
         ->setRules([
             '@PER' => true,
             '@PER:risky' => true,
-            '@PHP81Migration' => true,
+            '@PHP82Migration' => true,
             '@PHP80Migration:risky' => true,
             '@PHPUnit84Migration:risky' => true,
 
