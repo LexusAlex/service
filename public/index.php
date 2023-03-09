@@ -13,3 +13,4 @@ $dependencies = (require __DIR__ . '/../src/Configurations/dependencies.php')($m
 (require __DIR__ . '/../src/Configurations/container.php')($dependencies);
 
 //Хорошо про phpunit https://www.youtube.com/watch?v=BGw-NVfZ1HI&t=401s
+//Пробуем для авторизации https://github.com/php-casbin/php-casbin
