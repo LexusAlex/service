@@ -28,6 +28,8 @@
         "php-di/php-di": "^7.0",
         "ramsey/uuid": "^4.7",
         "robmorgan/phinx": "^0.13.4",
+        "slim/psr7": "^1.6",
+        "slim/slim": "^4.11",
         "webmozart/assert": "^1.11"
     },
     "scripts": {
