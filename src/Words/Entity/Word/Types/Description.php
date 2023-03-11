@@ -13,6 +13,11 @@ final class Description
         $this->value = $value;
     }
 
+    public function __toString(): string
+    {
+        return $this->getValue();
+    }
+
     public function getValue(): string
     {
         return $this->value;

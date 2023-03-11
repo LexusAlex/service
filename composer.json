@@ -39,6 +39,7 @@
         "psalm": "psalm --config=psalm.xml"
     },
     "require-dev": {
+        "dg/bypass-finals": "^1.4",
         "friendsofphp/php-cs-fixer": "^3.14",
         "lctrs/psalm-psr-container-plugin": "^1.9",
         "phpunit/phpunit": "^10.0",

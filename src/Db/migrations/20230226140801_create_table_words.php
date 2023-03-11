@@ -13,7 +13,8 @@ final class CreateTableWords extends AbstractMigration
           `name` VARCHAR(255) NOT NULL,
           `description` VARCHAR(255),
           `created_at` DATETIME NOT NULL,
-          PRIMARY KEY (`id`)
+          PRIMARY KEY (`id`),
+          UNIQUE KEY (`name`)
         ) CHARACTER SET utf8 COLLATE utf8_general_ci");
     }
 
