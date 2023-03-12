@@ -7,9 +7,9 @@ namespace Service\Http\Action\Words;
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;
 use Psr\Http\Server\RequestHandlerInterface;
+use Service\Slim\Response\EmptyResponse;
 use Service\Words\Command\Word\CreateWord\Command;
 use Service\Words\Command\Word\CreateWord\Handler;
-use Slim\Psr7\Response;
 
 final class CreateWordAction implements RequestHandlerInterface
 {
@@ -31,6 +31,6 @@ final class CreateWordAction implements RequestHandlerInterface
 
         $this->handler->handle($command);
 
-        return new Response();
+        return new EmptyResponse(201);
     }
 }

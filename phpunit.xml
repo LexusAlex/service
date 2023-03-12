@@ -12,6 +12,7 @@
     <testsuites>
         <testsuite name="default">
             <directory>src/Configurations/Test</directory>
+            <directory>src/Slim/Test</directory>
             <directory>src/Words/Test</directory>
         </testsuite>
     </testsuites>
@@ -28,6 +29,7 @@
         <exclude>
             <directory>src/Configurations/Test</directory>
             <directory>src/Words/Test</directory>
+            <directory>src/Slim/Test</directory>
         </exclude>
     </coverage>
 </phpunit>
