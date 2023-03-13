@@ -45,7 +45,6 @@ services:
      MYSQL_PORT: 3306
      APPLICATION_ENVIRONMENT: development
      APPLICATION_DEBUG: 1
-     PHP_CS_FIXER_IGNORE_ENV: 1
     volumes:
       - ./:/${NAME_SERVICE}
 
