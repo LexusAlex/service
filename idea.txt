@@ -1,1 +1,7 @@
 1. Продумать кеширование конфигов https://deworker.pro/blog/stream-modules#comment-b24762ca-e579-4633-9036-e55e1f35208f
+2. Добавить обработку sql запросов через транзакции https://www.php.net/manual/ru/pdo.transactions.php
+
+https://github.com/nginx/nginx/tags
+https://github.com/php/php-src/tags
+https://github.com/composer/composer/tags
+https://github.com/mysql/mysql-server/tags
