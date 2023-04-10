@@ -27,3 +27,7 @@ rollback-migrate:
 	docker compose run --rm php-cli composer phinx rollback -- --configuration src/Db/phinx.php
 status-migrate:
 	docker compose run --rm php-cli composer phinx status -- --configuration src/Db/phinx.php
+npm-install:
+	docker compose run --rm node-cli npm install
+npm-be-updated-all:
+	docker compose run --rm node-cli npm outdated --depth=9999
