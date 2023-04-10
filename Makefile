@@ -1,4 +1,4 @@
-init: docker-build docker-up
+init: docker-build composer-install docker-up
 docker-build:
 	docker compose build --pull
 docker-up:
@@ -11,6 +11,8 @@ composer-dump-autoload:
 	docker compose run --rm php-cli composer dump-autoload
 composer-tree-package:
 	docker compose run --rm php-cli composer show -t
+composer-install:
+	docker compose run --rm php-cli composer install
 test:
 	docker compose run --rm php-cli composer phpunit
 fixer:
