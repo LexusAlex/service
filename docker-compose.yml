@@ -68,15 +68,6 @@ services:
     volumes:
       - ./:/${NAME_SERVICE}
 
-  frontend-nginx:
-    build:
-      context: docker
-      dockerfile: nginx-frontend/Dockerfile
-    ports:
-      - "8888:80"
-    depends_on:
-      - frontend-node
-
   frontend-node:
     build:
       context: docker
@@ -84,7 +75,7 @@ services:
     environment:
       WDS_SOCKET_PORT: 0
     volumes:
-      - ./:/${NAME_SERVICE}
+      - ./react:/${NAME_SERVICE}
     command: npm start
     tty: true
 volumes:

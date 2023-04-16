@@ -13,6 +13,6 @@ final class HomeAction implements RequestHandlerInterface
 {
     public function handle(ServerRequestInterface $request): ResponseInterface
     {
-        return new HtmlResponse('html');
+        return new HtmlResponse(file_get_contents(__DIR__ . '/../../../public/build/index.html'));
     }
 }
