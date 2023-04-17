@@ -1,35 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:noNamespaceSchemaLocation="vendor/phpunit/phpunit/phpunit.xsd"
-         bootstrap="src/Configurations/Test/bootstrap.php"
-         cacheDirectory="var/cache/.phpunit.result.cache"
-         executionOrder="random"
-         beStrictAboutCoverageMetadata="true"
-         beStrictAboutOutputDuringTests="true"
-         failOnRisky="true"
-         failOnWarning="true"
-         colors="true">
-    <testsuites>
-        <testsuite name="default">
-            <directory>src/Configurations/Test</directory>
-            <directory>src/Slim/Test</directory>
-            <directory>src/Words/Test</directory>
-        </testsuite>
-    </testsuites>
-    <php>
-        <ini name="error_reporting" value="-1"/>
-        <env name="APPLICATION_ENVIRONMENT" value="test" force="true"/>
-        <env name="APPLICATION_DEBUG" value="1" force="true"/>
-    </php>
-
-    <coverage cacheDirectory="../var/cache/">
-        <include>
-            <directory suffix=".php">src</directory>
-        </include>
-        <exclude>
-            <directory>src/Configurations/Test</directory>
-            <directory>src/Words/Test</directory>
-            <directory>src/Slim/Test</directory>
-        </exclude>
-    </coverage>
+<phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="vendor/phpunit/phpunit/phpunit.xsd" bootstrap="src/Configurations/Test/bootstrap.php" cacheDirectory="var/cache/.phpunit.result.cache" executionOrder="random" beStrictAboutCoverageMetadata="true" beStrictAboutOutputDuringTests="true" failOnRisky="true" failOnWarning="true" colors="true">
+  <testsuites>
+    <testsuite name="default">
+      <directory>src/Configurations/Test</directory>
+      <directory>src/Slim/Test</directory>
+      <directory>src/Words/Test</directory>
+    </testsuite>
+  </testsuites>
+  <php>
+    <ini name="error_reporting" value="-1"/>
+    <env name="APPLICATION_ENVIRONMENT" value="test" force="true"/>
+    <env name="APPLICATION_DEBUG" value="1" force="true"/>
+  </php>
+  <coverage cacheDirectory="../var/cache/"/>
+  <source>
+    <include>
+      <directory suffix=".php">src</directory>
+    </include>
+    <exclude>
+      <directory>src/Configurations/Test</directory>
+      <directory>src/Words/Test</directory>
+      <directory>src/Slim/Test</directory>
+    </exclude>
+  </source>
 </phpunit>

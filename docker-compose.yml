@@ -68,15 +68,5 @@ services:
     volumes:
       - ./:/${NAME_SERVICE}
 
-  frontend-node:
-    build:
-      context: docker
-      dockerfile: node/Dockerfile
-    environment:
-      WDS_SOCKET_PORT: 0
-    volumes:
-      - ./react:/${NAME_SERVICE}
-    command: npm start
-    tty: true
 volumes:
   mysql:
