@@ -6,7 +6,7 @@ services:
       context: docker
       dockerfile: nginx/Dockerfile
     ports:
-      - "80:80"
+      - "8080:8080"
     volumes:
       - ./:/${NAME_SERVICE}
     depends_on:

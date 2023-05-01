@@ -4,6 +4,6 @@ RUN useradd -m alex && usermod -a -G node alex
 
 RUN npm install -g npm@latest
 
-WORKDIR /service/react
+WORKDIR /service/nextjs
 
 USER node
