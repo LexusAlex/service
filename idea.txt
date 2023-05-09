@@ -8,3 +8,6 @@ https://github.com/mysql/mysql-server/tags
 
 Веб сервер для nextjs
 https://habr.com/ru/articles/706838/
+
+Статистику можно делать отдельным fetcherom c одном запросом
+В таблицах хранит ровно то, что нам нужно
