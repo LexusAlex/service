@@ -17,4 +17,5 @@ $application = (require __DIR__ . '/../src/Configurations/Application/applicatio
 $application->run();
 
 //Хорошо про phpunit https://www.youtube.com/watch?v=BGw-NVfZ1HI&t=401s
+// https://habr.com/ru/companies/vk/articles/549698/ тоже про phpunit
 //Пробуем для авторизации https://github.com/php-casbin/php-casbin
