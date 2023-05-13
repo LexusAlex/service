@@ -1,10 +1,10 @@
 version: "3.9"
 services:
 
-  nginx:
+  nginx-backend:
     build:
       context: docker
-      dockerfile: nginx/Dockerfile
+      dockerfile: nginx-backend/Dockerfile
     ports:
       - "8080:8080"
     volumes:
@@ -67,6 +67,26 @@ services:
       dockerfile: node/Dockerfile
     volumes:
       - ./:/${NAME_SERVICE}
+
+  nginx-frontend:
+    build:
+      context: docker
+      dockerfile: nginx-frontend/Dockerfile
+    ports:
+       - "80:80"
+    depends_on:
+       - frontend-node
+
+  frontend-node:
+    build:
+      context: docker
+      dockerfile: node/Dockerfile
+    environment:
+      NODE_ENV: development
+    volumes:
+      - ./:/service
+    command: npm run dev
+    tty: true
 
 volumes:
   mysql:
