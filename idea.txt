@@ -15,4 +15,10 @@ https://habr.com/ru/articles/706838/
 npm init
 npx create-next-app@latest
 
-Курс архитектура фронтенда 1.49
+Курс архитектура фронтенда 2.06
+
+readability
+
+editorconfig
+eslint
+prettier
