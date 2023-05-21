@@ -20,7 +20,7 @@ return
             '@PER:risky' => true,
             '@PHP82Migration' => true,
             '@PHP80Migration:risky' => true,
-            '@PHPUnit84Migration:risky' => true,
+            '@PHPUnit100Migration:risky' => true,
 
             'no_unused_imports' => true,
             'ordered_imports' => ['imports_order' => ['class', 'function', 'const']],
