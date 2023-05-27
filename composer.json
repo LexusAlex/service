@@ -6,7 +6,10 @@
     "license": "BSD-3-Clause",
     "config": {
         "process-timeout": 0,
-        "sort-packages": true
+        "sort-packages": true,
+        "allow-plugins": {
+            "infection/extension-installer": true
+        }
     },
     "authors": [
         {
@@ -35,12 +38,15 @@
     "scripts": {
         "phinx": "phinx",
         "phpunit": "phpunit --colors=always",
+        "phpunit-coverage": "XDEBUG_MODE=coverage phpunit --colors=always --coverage-html var/logs/phpunit/coverage --coverage-xml=var/logs/phpunit/coverage-xml --log-junit=var/logs/phpunit/junit.xml",
         "php-cs-fixer": "php-cs-fixer fix --allow-risky=yes --diff",
-        "psalm": "psalm --config=psalm.xml"
+        "psalm": "psalm --config=psalm.xml",
+        "infection": "infection --show-mutations --log-verbosity=default --threads=4 --coverage=var/logs/phpunit"
     },
     "require-dev": {
         "dg/bypass-finals": "^1.4",
         "friendsofphp/php-cs-fixer": "^3.14",
+        "infection/infection": "^0.27.0",
         "lctrs/psalm-psr-container-plugin": "^1.9",
         "phpunit/phpunit": "^10.0",
         "psalm/plugin-phpunit": "^0.18.4",
