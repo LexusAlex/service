@@ -12,9 +12,8 @@ final class Email
 
     public function __construct(string $value)
     {
-        Assert::notEmpty($value);
         Assert::email($value);
-        $this->value = mb_strtolower($value);
+        $this->value = strtolower($value);
     }
 
     public function isEqualTo(self $other): bool

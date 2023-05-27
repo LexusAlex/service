@@ -8,8 +8,6 @@ use PHPUnit\Framework\TestCase;
 use Service\Words\Entity\Word\Types\Description;
 
 /**
- * @covers \Service\Words\Entity\Word\Types\Description;
- *
  * @internal
  */
 final class DescriptionTest extends TestCase

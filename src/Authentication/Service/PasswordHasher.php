@@ -15,8 +15,9 @@ final readonly class PasswordHasher
     public function hash(string $password): string
     {
         Assert::notEmpty($password);
-
-        return password_hash($password, PASSWORD_ARGON2I, ['memory_cost' => $this->memoryCost]);
+        $options = [];
+        $options['memory_cost'] = $this->memoryCost;
+        return password_hash($password, PASSWORD_ARGON2I, $options);
     }
 
     public function validate(string $password, string $hash): bool

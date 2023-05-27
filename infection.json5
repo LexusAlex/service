@@ -1,0 +1,19 @@
+{
+    "$schema": "vendor/infection/infection/resources/schema.json",
+    "source": {
+        "directories": [
+            "src"
+        ],
+        "excludes": [
+            "Db",
+        ]
+    },
+    "logs": {
+        "html": "var/logs/infection.html",
+        "text": "var/logs/infection.log"
+    },
+    "timeout": 50,
+    "mutators": {
+        "@default": true
+    }
+}

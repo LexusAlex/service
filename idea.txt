@@ -22,3 +22,5 @@ readability
 editorconfig
 eslint
 prettier
+
+docker compose run --rm php-cli composer require --dev infection/infection

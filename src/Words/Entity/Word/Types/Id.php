@@ -14,7 +14,7 @@ final class Id
     public function __construct(string $value)
     {
         Assert::uuid($value);
-        $this->value = mb_strtolower($value);
+        $this->value = strtolower($value);
     }
 
     public function __toString(): string

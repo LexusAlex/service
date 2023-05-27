@@ -9,8 +9,6 @@ use PHPUnit\Framework\TestCase;
 use Service\Words\Entity\Word\Types\Name;
 
 /**
- * @covers \Service\Words\Entity\Word\Types\Name;
- *
  * @internal
  */
 final class NameTest extends TestCase
