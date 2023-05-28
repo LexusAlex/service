@@ -5,10 +5,10 @@ export default function Home() {
   return (
     <main className={styles.main}>
       <div className={styles.description}>
+        ghjhgjhgj
         <p>
-          123fghgfhGet started by editing&nbsp;
-          <code className={styles.code}>src/app/page.tsx</code>
-          Какойто текст
+          Get started by editing&nbsp;
+          <code className={styles.code}>src/app/page.jsx</code>
         </p>
         <div>
           <a

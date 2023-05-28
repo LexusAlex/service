@@ -13,7 +13,7 @@ https://habr.com/ru/articles/706838/
 В таблицах хранит ровно то, что нам нужно
 
 npm init
-npx create-next-app@latest
+docker compose run --rm node-cli npx create-next-app@latest
 
 Курс архитектура фронтенда 2.06
 
