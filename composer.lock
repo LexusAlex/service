@@ -4670,16 +4670,16 @@
         },
         {
             "name": "phpdocumentor/type-resolver",
-            "version": "1.7.1",
+            "version": "1.7.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpDocumentor/TypeResolver.git",
-                "reference": "dfc078e8af9c99210337325ff5aa152872c98714"
+                "reference": "b2fe4d22a5426f38e014855322200b97b5362c0d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpDocumentor/TypeResolver/zipball/dfc078e8af9c99210337325ff5aa152872c98714",
-                "reference": "dfc078e8af9c99210337325ff5aa152872c98714",
+                "url": "https://api.github.com/repos/phpDocumentor/TypeResolver/zipball/b2fe4d22a5426f38e014855322200b97b5362c0d",
+                "reference": "b2fe4d22a5426f38e014855322200b97b5362c0d",
                 "shasum": ""
             },
             "require": {
@@ -4722,22 +4722,22 @@
             "description": "A PSR-5 based resolver of Class names, Types and Structural Element Names",
             "support": {
                 "issues": "https://github.com/phpDocumentor/TypeResolver/issues",
-                "source": "https://github.com/phpDocumentor/TypeResolver/tree/1.7.1"
+                "source": "https://github.com/phpDocumentor/TypeResolver/tree/1.7.2"
             },
-            "time": "2023-03-27T19:02:04+00:00"
+            "time": "2023-05-30T18:13:47+00:00"
         },
         {
             "name": "phpstan/phpdoc-parser",
-            "version": "1.21.2",
+            "version": "1.21.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpdoc-parser.git",
-                "reference": "a8094fafabf0d7c7b7337a9c6496f4d8fbc718f1"
+                "reference": "b0c366dd2cea79407d635839d25423ba07c55dd6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpdoc-parser/zipball/a8094fafabf0d7c7b7337a9c6496f4d8fbc718f1",
-                "reference": "a8094fafabf0d7c7b7337a9c6496f4d8fbc718f1",
+                "url": "https://api.github.com/repos/phpstan/phpdoc-parser/zipball/b0c366dd2cea79407d635839d25423ba07c55dd6",
+                "reference": "b0c366dd2cea79407d635839d25423ba07c55dd6",
                 "shasum": ""
             },
             "require": {
@@ -4768,9 +4768,9 @@
             "description": "PHPDoc parser with support for nullable, intersection and generic types",
             "support": {
                 "issues": "https://github.com/phpstan/phpdoc-parser/issues",
-                "source": "https://github.com/phpstan/phpdoc-parser/tree/1.21.2"
+                "source": "https://github.com/phpstan/phpdoc-parser/tree/1.21.3"
             },
-            "time": "2023-05-29T15:20:08+00:00"
+            "time": "2023-05-29T19:31:28+00:00"
         },
         {
             "name": "phpunit/php-code-coverage",
