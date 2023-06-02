@@ -31,5 +31,7 @@ status-migrate:
 	docker compose run --rm php-cli composer phinx status -- --configuration src/Db/phinx.php
 npm-install:
 	docker compose run --rm node-cli npm install
+npm-list:
+	docker compose run --rm node-cli npm list --depth=0
 npm-be-updated-all:
 	docker compose run --rm node-cli npm outdated --depth=9999
