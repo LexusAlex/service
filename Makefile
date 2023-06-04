@@ -15,6 +15,8 @@ composer-install:
 	docker compose run --rm php-cli composer install
 test:
 	docker compose run --rm php-cli composer phpunit
+test-coverage:
+	docker compose run --rm php-cli composer phpunit-coverage
 fixer:
 	docker compose run --rm php-cli composer php-cs-fixer
 psalm:
