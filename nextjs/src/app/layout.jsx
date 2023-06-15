@@ -1,6 +1,13 @@
-import './index.scss'
+import style from './index.scss';
 import { Montserrat } from 'next/font/google'
 import {Header} from "@/components/Header/Header";
+
+import dynamic from 'next/dynamic';
+
+const DynamicBootstrap = dynamic(
+  () => require('bootstrap/dist/js/bootstrap.min.js'),
+  { ssr: false }
+);
 
 const font = Montserrat({ subsets: ['latin'] })
 
