@@ -24,3 +24,6 @@ eslint
 prettier
 
 docker compose run --rm php-cli composer require --dev infection/infection
+
+Установка next
+https://react.dev/learn/start-a-new-react-project#nextjs
