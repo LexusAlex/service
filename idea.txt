@@ -27,3 +27,9 @@ docker compose run --rm php-cli composer require --dev infection/infection
 
 Установка next
 https://react.dev/learn/start-a-new-react-project#nextjs
+
+Про хуки
+https://reactdev.ru/reference/useState/
+https://habr.com/ru/companies/otus/articles/667706/
+https://habr.com/ru/companies/otus/articles/668700/
+https://habr.com/ru/companies/otus/articles/669962/
